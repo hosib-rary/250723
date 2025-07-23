@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery Page</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main>
+
+    <!-- Top Pagination -->
+    <div id="top_pagenation">
+      <button aria-controls="wrapperList01" aria-expanded="true">1</button>
+      <button aria-controls="wrapperList02" aria-expanded="false">2</button>
+      <button aria-controls="wrapperList03" aria-expanded="false">3</button>
+    </div>
+
+    <!-- Section 1 -->
+    <section id="wrapperList01" class="gallery-wrapper show">
+      <div id="bannerList01">
+        <div class="gallery-grid">
+          <!-- 이미지 1~4 -->
+          <div class="gallery-item" data-image="sample001.jpg" data-description="배너 디자인 1">
+            <img src="thumbnail_sample001.jpg" alt="">
+          </div>
+          <div class="gallery-item" data-image="sample002.jpg" data-description="배너 디자인 2">
+            <img src="thumbnail_sample002.jpg" alt="">
+          </div>
+          <div class="gallery-item" data-image="sample003.jpg" data-description="배너 디자인 3">
+            <img src="thumbnail_sample003.jpg" alt="">
+          </div>
+          <div class="gallery-item" data-image="sample004.jpg" data-description="배너 디자인 4">
+            <img src="thumbnail_sample004.jpg" alt="">
+          </div>
+        </div>
+        <div class="bottom-pagenation">
+          <button aria-controls="bannerList01" aria-expanded="true">1</button>
+          <button aria-controls="bannerList02" aria-expanded="false">2</button>
+        </div>
+      </div>
+
+      <div id="bannerList02" class="hidden">
+        <div class="gallery-grid">
+          <!-- 이미지 5~8 -->
+          <div class="gallery-item" data-image="sample005.jpg" data-description="배너 디자인 5">
+            <img src="thumbnail_sample005.jpg" alt="">
+          </div>
+          <div class="gallery-item" data-image="sample006.jpg" data-description="배너 디자인 6">
+            <img src="thumbnail_sample006.jpg" alt="">
+          </div>
+          <div class="gallery-item" data-image="sample007.jpg" data-description="배너 디자인 7">
+            <img src="thumbnail_sample007.jpg" alt="">
+          </div>
+          <div class="gallery-item" data-image="sample008.jpg" data-description="배너 디자인 8">
+            <img src="thumbnail_sample008.jpg" alt="">
+          </div>
+        </div>
+        <div class="bottom-pagenation">
+          <button aria-controls="bannerList01" aria-expanded="false">1</button>
+          <button aria-controls="bannerList02" aria-expanded="true">2</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section id="wrapperList02" class="gallery-wrapper hidden">
+      <div id="branding01">
+        <div class="gallery-grid"></div>
+        <div class="bottom-pagenation">
+          <button aria-controls="branding01" aria-expanded="true">1</button>
+          <button aria-controls="branding02" aria-expanded="false">2</button>
+        </div>
+      </div>
+      <div id="branding02" class="hidden">
+        <div class="gallery-grid"></div>
+        <div class="bottom-pagenation">
+          <button aria-controls="branding01" aria-expanded="false">1</button>
+          <button aria-controls="branding02" aria-expanded="true">2</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section id="wrapperList03" class="gallery-wrapper hidden">
+      <div id="detail01">
+        <div class="gallery-grid"></div>
+        <div class="bottom-pagenation">
+          <button aria-controls="detail01" aria-expanded="true">1</button>
+          <button aria-controls="detail02" aria-expanded="false">2</button>
+        </div>
+      </div>
+      <div id="detail02" class="hidden">
+        <div class="gallery-grid"></div>
+        <div class="bottom-pagenation">
+          <button aria-controls="detail01" aria-expanded="false">1</button>
+          <button aria-controls="detail02" aria-expanded="true">2</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 라이트박스 -->
+  <div id="lightbox" class="lightbox hidden">
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="">
+      <p id="lightbox-desc"></p>
+      <button id="lightbox-close">닫기</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
