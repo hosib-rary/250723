@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그리드 연습</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><button type="button" aria-expanded="true"  aria-controls="gallery-wrapper01" class="active">Banner</button></li>
+            <li><button type="button" aria-expanded="false"  aria-controls="gallery-wrapper02">Branding</button></li>
+            <li><button type="button" aria-expanded="false"  aria-controls="gallery-wrapper03">Detail Page</button></li>
+        </ul>
+    </nav>
+    <div id="gallery-wrapper">
+        <div id="galleryGrid">
+            <div id="gallery-wrapper01">
+                <div id="bannerpage">
+                    <div class="list-wrapper01">
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample001.png" alt="작품001">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample002.png" alt="작품002">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample003.png" alt="작품003">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample004.png" alt="작품004">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample005.png" alt="작품005">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample006.png" alt="작품006">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample007.png" alt="작품007">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample008.png" alt="작품008">
+                        </div>
+                    </div>
+                    <div class="list-wrapper02" hidden >
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample001.png" alt="작품009">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample002.png" alt="작품010">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample003.png" alt="작품011">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample004.png" alt="작품012">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample005.png" alt="작품013">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample006.png" alt="작품014">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample007.png" alt="작품015">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample008.png" alt="작품016">
+                        </div>
+                    </div>
+                    <div id="workPagenation">
+                        <button type="button" aria-expanded="true" aria-controls="list-wrapper01">1</button>
+                        <button type="button" aria-expanded="false"  aria-controls="list-wrapper02">2</button>
+                    </div>
+                </div>
+            </div>
+            <div id="gallery-wrapper02" hidden>
+                <div id="branding">
+                    <div class="list-wrapper01">
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample001.png" alt="작품001">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample002.png" alt="작품002">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample003.png" alt="작품003">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample004.png" alt="작품004">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample005.png" alt="작품005">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample006.png" alt="작품006">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample007.png" alt="작품007">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample008.png" alt="작품008">
+                        </div>
+                    </div>
+                    <div class="list-wrapper02" hidden >
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample001.png" alt="작품009">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample002.png" alt="작품010">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample003.png" alt="작품011">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample004.png" alt="작품012">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample005.png" alt="작품013">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample006.png" alt="작품014">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample007.png" alt="작품015">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample008.png" alt="작품016">
+                        </div>
+                    </div>
+                    <div id="workPagenation">
+                        <button type="button" aria-expanded="true" aria-controls="list-wrapper01">1</button>
+                        <button type="button" aria-expanded="false"  aria-controls="list-wrapper02">2</button>
+                    </div>
+                </div>
+            </div>
+            <div id="gallery-wrapper03" hidden>
+                <div id="detailpage">
+                    <div class="list-wrapper01">
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample001.png" alt="작품001">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample002.png" alt="작품002">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample003.png" alt="작품003">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample004.png" alt="작품004">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample005.png" alt="작품005">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample006.png" alt="작품006">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample007.png" alt="작품007">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample008.png" alt="작품008">
+                        </div>
+                    </div>
+                    <div class="list-wrapper02" hidden >
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample001.png" alt="작품009">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample002.png" alt="작품010">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample003.png" alt="작품011">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample004.png" alt="작품012">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample005.png" alt="작품013">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample006.png" alt="작품014">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample007.png" alt="작품015">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="images/thumnail_sample008.png" alt="작품016">
+                        </div>
+                    </div>
+                    <div id="workPagenation">
+                        <button type="button" aria-expanded="true" aria-controls="list-wrapper01">1</button>
+                        <button type="button" aria-expanded="false"  aria-controls="list-wrapper02">2</button>
+                    </div>
+                </div>
+            </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
